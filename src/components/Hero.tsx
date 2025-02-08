@@ -1,6 +1,7 @@
+
 const Hero = () => {
   return (
-    <section className="pt-16 pb-8 min-h-[80vh] flex items-center bg-gradient-to-br from-white to-webrands-gray">
+    <section className="pt-16 pb-8 min-h-[60vh] flex items-center bg-gradient-to-br from-white to-webrands-gray">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeIn text-webrands-dark">
