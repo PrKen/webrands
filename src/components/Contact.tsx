@@ -1,9 +1,8 @@
-
 import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 bg-white">
+    <section id="contact" className="py-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-webrands-dark">

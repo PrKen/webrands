@@ -9,7 +9,7 @@ const reasons = [
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="py-20 bg-accent">
+    <section id="why-us" className="py-12 bg-accent">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-webrands-dark">
