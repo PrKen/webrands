@@ -1,5 +1,5 @@
-
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll"; // Importation de react-scroll
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -12,15 +12,40 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <span className="text-primary font-bold text-sm">L'agence de site N°1</span>
             <a href="/" className="flex items-center">
-              <img src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png" alt="Webrands Logo" className="h-10" />
+              <img
+                src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png"
+                alt="Webrands Logo"
+                className="h-10"
+              />
             </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <a href="#services" className="text-webrands-dark hover:text-primary transition-colors">Services</a>
-            <a href="#why-us" className="text-webrands-dark hover:text-primary transition-colors">Pourquoi nous</a>
-            <a href="#contact" className="text-webrands-dark hover:text-primary transition-colors">Contact</a>
+            <ScrollLink
+              to="services"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
+            >
+              Services
+            </ScrollLink>
+            <ScrollLink
+              to="why-us"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
+            >
+              Pourquoi nous
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
+            >
+              Contact
+            </ScrollLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -36,27 +61,33 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
-              <a
-                href="#services"
-                className="text-webrands-dark hover:text-primary transition-colors"
+              <ScrollLink
+                to="services"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Services
-              </a>
-              <a
-                href="#why-us"
-                className="text-webrands-dark hover:text-primary transition-colors"
+              </ScrollLink>
+              <ScrollLink
+                to="why-us"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Pourquoi nous
-              </a>
-              <a
-                href="#contact"
-                className="text-webrands-dark hover:text-primary transition-colors"
+              </ScrollLink>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
-              </a>
+              </ScrollLink>
             </div>
           </div>
         )}

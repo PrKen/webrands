@@ -3,15 +3,15 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="py-16 bg-white flex flex-col items-center text-center">
+    <section id="contact" className="py-16 bg-white flex flex-col items-center text-center">
       <div className="container mx-auto px-6 max-w-2xl">
         
-        {/* Image au-dessus */}
+        {/* Image avec taille réduite */}
         <div className="flex justify-center mb-6">
           <img
             src="/assets/paiement.jpg"
             alt="Paiement sécurisé"
-            className="rounded-lg shadow-lg w-full h-auto object-contain"
+            className="rounded-lg shadow-lg w-[70%] h-auto object-contain"
           />
         </div>
 
@@ -33,7 +33,7 @@ const Contact = () => {
           </a>
           
           <a
-            href="https://wa.me/+33754582837" // Remplacez par votre numéro WhatsApp Business
+            href="https://wa.me/123456789" // Remplacez par votre numéro WhatsApp Business
             className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-all text-lg font-semibold"
           >
             <FaWhatsapp className="mr-2" size={24} />
