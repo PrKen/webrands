@@ -1,30 +1,15 @@
 const Hero = () => {
   return (
     <section className="pt-16 pb-8 min-h-[70vh] flex items-center bg-gradient-to-br from-white to-webrands-gray">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         
-        {/* Image à gauche */}
-        <div className="md:w-1/2 flex justify-center">
-          <img 
-            src="/assets/hero-image.jpg" 
-            alt="Illustration Webrands" 
-            className="rounded-lg shadow-lg max-w-full h-auto"
-          />
-        </div>
-
-        {/* Texte à droite */}
-        <div className="md:w-1/2 text-left animate-fadeIn">
-          <h2 className="text-3xl md:text-4xl font-semibold text-webrands-dark mb-4">
-            Votre réussite, notre métier.
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600 mb-6">
-            Développez tout votre potentiel avec <span className="text-primary font-bold">Webrands</span> !
-          </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-webrands-dark">
+        {/* Texte à gauche */}
+        <div className="md:w-1/2 text-left animate-fadeIn space-y-6">
+          <h1 className="text-5xl font-bold text-primary">
             Créons ensemble votre présence digitale
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Webrands transforme vos idées en expériences web exceptionnelles
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Webrands transforme vos idées en expériences web exceptionnelles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -40,6 +25,21 @@ const Hero = () => {
               Nos Services
             </a>
           </div>
+        </div>
+
+        {/* Image à droite avec texte au-dessus */}
+        <div className="md:w-1/2 relative flex justify-center">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center bg-white px-6 py-2 rounded-lg shadow-md">
+            <h2 className="text-lg font-semibold text-primary">
+              Votre réussite, notre métier.
+            </h2>
+            <p className="text-gray-700">Développez tout votre potentiel avec Webrands !</p>
+          </div>
+          <img 
+            src="/assets/hero-image.jpg" 
+            alt="Illustration Webrands" 
+            className="rounded-lg shadow-lg w-full h-auto object-contain"
+          />
         </div>
 
       </div>

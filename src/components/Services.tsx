@@ -1,56 +1,37 @@
-import { Globe, ShoppingCart, Smartphone, Settings } from "lucide-react";
-
 const services = [
   {
-    icon: Globe,
-    title: "Création de sites vitrines",
-    description: "Des sites web professionnels et élégants pour présenter votre activité.",
+    title: "Sites Web Professionnels",
+    description: "Conception et développement de sites modernes, optimisés pour votre activité.",
     image: "/assets/illu1.jpg",
   },
   {
-    icon: ShoppingCart,
-    title: "Création de sites e-commerce",
-    description: "Des boutiques en ligne performantes pour développer votre business.",
+    title: "E-commerce et Boutiques en ligne",
+    description: "Création de plateformes de vente en ligne performantes et sécurisées.",
     image: "/assets/illu3.jpg",
   },
   {
-    icon: Settings,
-    title: "Maintenance de site web",
-    description: "Un support technique continu pour garder votre site à jour et sécurisé.",
+    title: "Marketing Digital et Réseaux Sociaux",
+    description: "Gestion de votre présence en ligne et stratégies publicitaires sur les réseaux sociaux.",
     image: "/assets/illu4.jpg",
-  },
-  {
-    icon: Smartphone,
-    title: "Gestion de comptes publicitaires",
-    description: "Optimisation de vos campagnes marketing pour maximiser votre visibilité.",
-    image: "/assets/illu2.jpg",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-12 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-primary text-center mb-8">
+    <section id="services" className="py-16 bg-gray-100">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-primary text-center mb-12">
           Nos Services
         </h2>
-        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Des solutions web complètes pour répondre à tous vos besoins digitaux
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 p-6"
             >
-              <img src={service.image} alt={service.title} className="w-full h-40 object-cover" />
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                  <service.icon className="text-white" size={24} />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-webrands-dark">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
+              <img src={service.image} alt={service.title} className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold text-webrands-dark mb-3">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
         </div>
