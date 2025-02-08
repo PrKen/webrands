@@ -1,8 +1,9 @@
+
 import { Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-webrands-dark">
@@ -20,11 +21,13 @@ const Contact = () => {
               <span>contact@webrands.com</span>
             </a>
             <a
-              href="tel:+33600000000"
+              href="https://wa.me/33754582837"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors"
             >
               <Phone size={20} />
-              <span>+33 6 00 00 00 00</span>
+              <span>+33 7 54 58 28 37</span>
             </a>
           </div>
         </div>

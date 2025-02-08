@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <span className="text-primary font-bold text-sm">L'agence de site N°1</span>
             <a href="/" className="flex items-center">
-              <img src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png" alt="Webrands Logo" className="h-8" />
+              <img src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png" alt="Webrands Logo" className="h-10" />
             </a>
           </div>
 
