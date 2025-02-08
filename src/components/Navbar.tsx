@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -8,9 +9,12 @@ const Navbar = () => {
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="flex items-center">
-            <img src="/lovable-uploads/fe232a62-a661-4980-b3e6-aa2a131c085a.png" alt="Webrands Logo" className="h-8" />
-          </a>
+          <div className="flex items-center space-x-4">
+            <span className="text-primary font-bold text-sm">L'agence de site N°1</span>
+            <a href="/" className="flex items-center">
+              <img src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png" alt="Webrands Logo" className="h-8" />
+            </a>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">

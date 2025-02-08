@@ -1,20 +1,26 @@
-import { Globe, ShoppingCart, Smartphone } from "lucide-react";
+
+import { Globe, ShoppingCart, Smartphone, Settings } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
-    title: "Sites Vitrines",
-    description: "Présentez votre entreprise avec élégance grâce à nos sites web sur mesure.",
+    title: "Création de sites vitrines",
+    description: "Des sites web professionnels et élégants pour présenter votre activité.",
   },
   {
     icon: ShoppingCart,
-    title: "E-commerce",
-    description: "Développez votre activité en ligne avec une boutique e-commerce performante.",
+    title: "Création de sites e-commerce",
+    description: "Des boutiques en ligne performantes pour développer votre business.",
+  },
+  {
+    icon: Settings,
+    title: "Maintenance de site web",
+    description: "Un support technique continu pour garder votre site à jour et sécurisé.",
   },
   {
     icon: Smartphone,
-    title: "Responsive Design",
-    description: "Une expérience utilisateur optimale sur tous les appareils.",
+    title: "Gestion de comptes publicitaires",
+    description: "Optimisation de vos campagnes marketing pour maximiser votre visibilité.",
   },
 ];
 
@@ -22,14 +28,17 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-webrands-dark">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-webrands-dark">
           Nos Services
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Des solutions web complètes pour répondre à tous vos besoins digitaux
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-accent hover:shadow-lg transition-shadow"
+              className="p-6 rounded-lg bg-accent hover:shadow-lg transition-all transform hover:-translate-y-1"
             >
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
                 <service.icon className="text-white" size={24} />
