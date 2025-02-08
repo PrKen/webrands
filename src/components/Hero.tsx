@@ -1,17 +1,6 @@
 const Hero = () => {
   return (
     <section className="pt-16 pb-8 min-h-[70vh] flex flex-col gap-8 items-center bg-gradient-to-br from-white to-webrands-gray">
-      
-      {/* Texte au-dessus de l'image */}
-      <div className="w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary">
-          Votre réussite, notre métier.
-        </h2>
-        <p className="text-lg text-gray-700 mt-2">
-          Développez tout votre potentiel avec Webrands !
-        </p>
-      </div>
-
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         
         {/* Texte à gauche */}
@@ -38,8 +27,15 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Image à droite */}
-        <div className="md:w-1/2 flex justify-center">
+        {/* Image à droite avec texte en haut à droite */}
+        <div className="md:w-1/2 relative flex justify-center">
+          {/* Texte positionné en haut à droite de l'image */}
+          <div className="absolute top-4 right-4 bg-white px-6 py-2 rounded-lg shadow-md text-right">
+            <h2 className="text-lg font-semibold text-primary">
+              Votre réussite, notre métier.
+            </h2>
+            <p className="text-gray-700">Développez tout votre potentiel avec Webrands !</p>
+          </div>
           <img 
             src="/assets/hero-image.jpg" 
             alt="Illustration Webrands" 
