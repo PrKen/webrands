@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll"; // Importation de react-scroll
+import { Link as ScrollLink } from "react-scroll";
 import { Menu, X } from "lucide-react";
+import { FaInstagram } from "react-icons/fa"; // Import de l'icône Instagram
+import { Link } from "react-router-dom"; // Pour la navigation vers la politique du site
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ const Navbar = () => {
             <span className="text-primary font-bold text-sm">L'agence de site N°1</span>
             <a href="/" className="flex items-center">
               <img
-                src="/lovable-uploads/70478792-c98e-460a-a998-7d2e66fa11b2.png"
+                src="/assets/webrands-logo.png"
                 alt="Webrands Logo"
                 className="h-10"
               />
@@ -21,7 +23,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             <ScrollLink
               to="services"
               smooth={true}
@@ -46,6 +48,15 @@ const Navbar = () => {
             >
               Contact
             </ScrollLink>
+            {/* Bouton Instagram */}
+            <a
+              href="https://www.instagram.com/webrands_agency/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-webrands-dark hover:text-primary transition-colors flex items-center"
+            >
+              <FaInstagram size={20} className="mr-2" /> Instagram
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,6 +99,15 @@ const Navbar = () => {
               >
                 Contact
               </ScrollLink>
+              <a
+                href="https://www.instagram.com/webrands_agency/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-webrands-dark hover:text-primary transition-colors flex items-center"
+                onClick={() => setIsOpen(false)}
+              >
+                <FaInstagram size={20} className="mr-2" /> Instagram
+              </a>
             </div>
           </div>
         )}
