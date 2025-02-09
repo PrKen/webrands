@@ -25,7 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#ea384c",
+          DEFAULT: "#f72a0d",
           foreground: "#ffffff",
         },
         secondary: {
@@ -37,7 +37,7 @@ export default {
           foreground: "#403E43",
         },
         webrands: {
-          red: "#ea384c",
+          red: "#f72a0d",
           blue: "#33C3F0",
           gray: "#F1F0FB",
           dark: "#403E43",
