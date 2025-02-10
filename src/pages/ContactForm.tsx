@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
   const [successMessage, setSuccessMessage] = useState(""); // Stocke le message temporaire
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -19,8 +19,8 @@ const ContactForm = () => {
     emailjs.send(serviceId, templateId, formData, publicKey)
       .then(() => {
         setSuccessMessage("✅ Votre message a été envoyé avec succès !");
-        setFormData({ name: "", email: "", message: "" });
-  
+        setFormData({ name: "", phone: "", email: "", message: "" });
+
         setTimeout(() => {
           setSuccessMessage("");
         }, 5000);
@@ -29,7 +29,6 @@ const ContactForm = () => {
         setSuccessMessage("❌ Une erreur s'est produite. Veuillez réessayer.");
       });
   };
-  
 
   return (
     <section className="py-16 bg-gray-100 flex justify-center">
@@ -46,7 +45,7 @@ const ContactForm = () => {
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Nom</label>
+            <label className="block text-gray-700 font-semibold mb-2">Nom *</label>
             <input
               type="text"
               name="name"
@@ -57,18 +56,28 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Email</label>
+            <label className="block text-gray-700 font-semibold mb-2">Téléphone *</label>
             <input
-              type="email"
-              name="email"
-              value={formData.email}
+              type="tel"
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               required
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Message</label>
+            <label className="block text-gray-700 font-semibold mb-2">Email (Facultatif)</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700 font-semibold mb-2">Message *</label>
             <textarea
               name="message"
               rows={4}
