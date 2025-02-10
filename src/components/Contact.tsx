@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
@@ -25,13 +26,12 @@ const Contact = () => {
 
         {/* Boutons d'action */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="/contact-form"
-            className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition-all text-lg font-semibold"
-          >
-            Contactez-nous
-          </a>
-          
+        <Link 
+        to="/contact-form" 
+        className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-opacity-90 transition-all text-lg font-semibold"
+        >
+        Contactez-nous        
+        </Link>          
           <a
             href="https://wa.me/+33754582837" // Remplacez par votre numéro WhatsApp Business
             className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-all text-lg font-semibold"
