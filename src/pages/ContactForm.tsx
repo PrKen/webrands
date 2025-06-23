@@ -8,8 +8,8 @@ const ContactForm = () => {
     email: "", 
     message: "" 
   });
-  const [successMessage, setSuccessMessage] = useState(""); // Stocke le message temporaire
-  const [errorMessage, setErrorMessage] = useState(""); // Stocke les erreurs
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,28 +18,25 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Vérifier que les champs obligatoires sont remplis
     if (!formData.name || !formData.phone || !formData.message) {
-      setErrorMessage("❌ Veuillez remplir tous les champs obligatoires !");
+      setErrorMessage("❌ Please fill in all required fields!");
       return;
     }
 
-    // Vérification des données envoyées
-    console.log("Données envoyées à EmailJS :", formData);
+    console.log("Data sent to EmailJS:", formData);
 
-    const serviceId = "service_9tr21p3"; 
-    const templateId = "template_i343zkc"; 
-    const publicKey = "KkKOesSLfZSR943U_"; 
+    const serviceId = "service_9tr21p3";
+    const templateId = "template_i343zkc";
+    const publicKey = "KkKOesSLfZSR943U_";
 
-    // Envoi des données à EmailJS
     emailjs.send(serviceId, templateId, {
       name: formData.name,
       phone: formData.phone,
-      email: formData.email || "Non renseigné", // Gérer l'absence d'email
+      email: formData.email || "Not provided",
       message: formData.message,
     }, publicKey)
     .then(() => {
-      setSuccessMessage("✅ Votre message a été envoyé avec succès !");
+      setSuccessMessage("✅ Your message has been sent successfully!");
       setErrorMessage("");
       setFormData({ name: "", phone: "", email: "", message: "" });
 
@@ -48,8 +45,8 @@ const ContactForm = () => {
       }, 5000);
     })
     .catch((error) => {
-      console.error("Erreur EmailJS :", error);
-      setErrorMessage("❌ Une erreur s'est produite. Veuillez réessayer.");
+      console.error("EmailJS Error:", error);
+      setErrorMessage("❌ An error occurred. Please try again.");
     });
   };
 
@@ -57,7 +54,7 @@ const ContactForm = () => {
     <section className="py-16 bg-gray-100 flex justify-center">
       <div className="container mx-auto px-6 max-w-lg bg-white shadow-lg rounded-lg p-8">
         
-        {/* Messages temporaires */}
+        {/* Feedback messages */}
         {successMessage && (
           <div className="bg-green-100 text-green-700 px-4 py-2 rounded-lg mb-4 text-center">
             {successMessage}
@@ -69,11 +66,11 @@ const ContactForm = () => {
           </div>
         )}
 
-        <h2 className="text-3xl font-bold text-primary text-center mb-6">Contactez-nous</h2>
+        <h2 className="text-3xl font-bold text-primary text-center mb-6">Contact Us</h2>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Nom *</label>
+            <label className="block text-gray-700 font-semibold mb-2">Name *</label>
             <input
               type="text"
               name="name"
@@ -84,7 +81,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Téléphone *</label>
+            <label className="block text-gray-700 font-semibold mb-2">Phone *</label>
             <input
               type="tel"
               name="phone"
@@ -95,7 +92,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-semibold mb-2">Email (Facultatif)</label>
+            <label className="block text-gray-700 font-semibold mb-2">Email (Optional)</label>
             <input
               type="email"
               name="email"
@@ -119,7 +116,7 @@ const ContactForm = () => {
             type="submit"
             className="w-full bg-primary text-white py-3 rounded-lg hover:bg-opacity-90 transition-all"
           >
-            Envoyer
+            Send
           </button>
         </form>
       </div>

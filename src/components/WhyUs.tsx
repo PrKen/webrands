@@ -1,10 +1,10 @@
 import { CheckCircle } from "lucide-react";
 
 const reasons = [
-  "Expertise technique approfondie",
-  "Design moderne et personnalisé",
-  "Support réactif et professionnel",
-  "Solutions évolutives",
+  "In-depth technical expertise",
+  "Modern and custom design",
+  "Responsive and professional support",
+  "Scalable solutions",
 ];
 
 const WhyUs = () => {
@@ -13,7 +13,7 @@ const WhyUs = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-webrands-dark">
-            Pourquoi Choisir Webrands ?
+            Why Choose Webrands?
           </h2>
           <div className="space-y-6">
             {reasons.map((reason, index) => (

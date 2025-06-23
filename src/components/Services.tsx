@@ -1,17 +1,17 @@
 const services = [
   {
-    title: "Sites Web Professionnels",
-    description: "Conception et développement de sites modernes, optimisés pour votre activité.",
+    title: "Professional Websites",
+    description: "Modern and optimized websites tailored to your business.",
     image: "/assets/illu1.jpg",
   },
   {
-    title: "E-commerce et Boutiques en ligne",
-    description: "Création de plateformes de vente en ligne performantes et sécurisées.",
+    title: "E-commerce & Online Stores",
+    description: "High-performance, secure online sales platforms.",
     image: "/assets/illu3.jpg",
   },
   {
-    title: "Marketing Digital et Réseaux Sociaux",
-    description: "Gestion de votre présence en ligne et stratégies publicitaires sur les réseaux sociaux.",
+    title: "Digital Marketing & Social Media",
+    description: "Managing your online presence and ad campaigns on social platforms.",
     image: "/assets/illu4.jpg",
   },
 ];
@@ -21,7 +21,7 @@ const Services = () => {
     <section id="services" className="py-16 bg-gray-100">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-primary text-center mb-12">
-          Nos Services
+          Our Services
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (

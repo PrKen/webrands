@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Menu, X } from "lucide-react";
-import { FaInstagram } from "react-icons/fa"; // Import de l'icône Instagram
-import { Link } from "react-router-dom"; // Pour la navigation vers la politique du site
+import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <span className="text-primary font-bold text-sm">L'agence de site N°1</span>
+            <span className="text-primary font-bold text-sm">The #1 Website Agency</span>
             <a href="/" className="flex items-center">
               <img
                 src="/assets/webrands-logo.png"
@@ -38,7 +38,7 @@ const Navbar = () => {
               duration={500}
               className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
             >
-              Pourquoi nous
+              Why Choose Us
             </ScrollLink>
             <ScrollLink
               to="contact"
@@ -48,7 +48,6 @@ const Navbar = () => {
             >
               Contact
             </ScrollLink>
-            {/* Bouton Instagram */}
             <a
               href="https://www.instagram.com/webrands_agency/" 
               target="_blank" 
@@ -88,7 +87,7 @@ const Navbar = () => {
                 className="cursor-pointer text-webrands-dark hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Pourquoi nous
+                Why Choose Us
               </ScrollLink>
               <ScrollLink
                 to="contact"
