@@ -11,7 +11,7 @@ const Hero = () => {
             Let's build your digital presence
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Webrands transforms your ideas into outstanding web experiences.
+            Webrands Agency transforms your ideas into outstanding web experiences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <ScrollLink

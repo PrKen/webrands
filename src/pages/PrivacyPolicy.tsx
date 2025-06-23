@@ -8,7 +8,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <p>
           This Privacy Policy explains how Webrands LLC (“we”, “our”, or “us”) collects, uses, and safeguards your
-          information when you visit or use our website, www.webrands.fr.
+          information when you visit or use our website, www.webrandsagency.com .
         </p>
 
         <div className="space-y-1 text-muted-foreground">
@@ -59,7 +59,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <div>
           <h2 className="text-2xl font-semibold text-primary mt-8 mb-2">5. Cookies</h2>
-          <p>We use cookies to analyze website traffic and improve user experience on www.webrands.fr.</p>
+          <p>We use cookies to analyze website traffic and improve user experience on www.webrandsagency.com .</p>
         </div>
       </div>
     </section>

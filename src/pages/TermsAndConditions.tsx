@@ -7,7 +7,7 @@ const TermsAndConditions: React.FC = () => {
         <h1 className="text-4xl font-bold text-primary border-b pb-4">Terms & Conditions</h1>
 
         <p>
-          By accessing or using www.webrands.fr, you agree to the following terms governing our digital agency services.
+          By accessing or using www.webrandsagency.com, you agree to the following terms governing our digital agency services.
         </p>
 
         <div className="space-y-1 text-muted-foreground">
