@@ -145,10 +145,10 @@ const ContactForm = () => {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:contact@webrandsagency.com"
+                  href="mailto:team@webrandsagency.com"
                   className="underline text-primary"
                 >
-                  contact@webrandsagency.com
+                  team@webrandsagency.com
                 </a>
               </p>
               <p>Phone: +1 505 523 1391</p>

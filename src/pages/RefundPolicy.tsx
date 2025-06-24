@@ -14,8 +14,8 @@ const RefundPolicy: React.FC = () => {
         <p>
           Refund requests may be considered in exceptional cases involving a proven technical error on our part. To
           submit a request, contact us at{" "}
-          <a href="mailto:contact@webrandsagency.com" className="underline text-primary">
-            contact@webrandsagency.com
+          <a href="mailto:team@webrandsagency.com" className="underline text-primary">
+            team@webrandsagency.com
           </a>{" "}
           within 7 days of your purchase.
         </p>

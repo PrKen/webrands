@@ -15,7 +15,7 @@ const PrivacyPolicy: React.FC = () => {
           <p><strong>Company:</strong> Webrands LLC</p>
           <p>102 Gold Ave SW 162, Albuquerque, NM 87102, USA</p>
           <p><strong>Personal address:</strong> 66 Avenue d’Ivry, Etage 15 Paris, 75013, France</p>
-          <p>Email: <a href="mailto:contact@webrandsagency.com" className="underline text-primary">contact@webrandsagency.com</a></p>
+          <p>Email: <a href="mailto:team@webrandsagency.com" className="underline text-primary">team@webrandsagency.com</a></p>
           <p>Phone: +1 505 523 1391</p>
         </div>
 
@@ -53,7 +53,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="text-2xl font-semibold text-primary mt-8 mb-2">4. Your Rights</h2>
           <p>
             Under GDPR, you have the right to access, correct, or delete your data. Contact us at{' '}
-            <a href="mailto:contact@webrandsagency.com" className="underline text-primary">contact@webrandsagency.com</a>.
+            <a href="mailto:team@webrandsagency.com" className="underline text-primary">team@webrandsagency.com</a>.
           </p>
         </div>
 

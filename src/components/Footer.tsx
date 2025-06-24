@@ -41,8 +41,8 @@ const Footer = () => {
             <p>66 Avenue d’Ivry, Etage 15 75013 Paris, France</p>
             <p>
               Email:{" "}
-              <a href="mailto:contact@webrandsagency.com" className="underline">
-                contact@webrandsagency.com
+              <a href="mailto:team@webrandsagency.com" className="underline">
+                team@webrandsagency.com
               </a>
             </p>
             <p>Phone: +1 505 523 1391</p>
