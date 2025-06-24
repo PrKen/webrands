@@ -9,6 +9,7 @@ import ContactForm from "./pages/ContactForm";
 import Navbar from "./components/Navbar";
 
 // Import des pages légales
+import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import RefundPolicy from "./pages/RefundPolicy";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/contact-form" element={<ContactForm />} />
 
           {/* Pages légales */}
+          <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
