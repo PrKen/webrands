@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -32,13 +31,6 @@ const Contact = () => {
           >
             Contact us
           </Link>          
-          <a
-            href="https://wa.me/+33754582837"
-            className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-all text-lg font-semibold"
-          >
-            <FaWhatsapp className="mr-2" size={24} />
-            WhatsApp
-          </a>
         </div>
 
       </div>
