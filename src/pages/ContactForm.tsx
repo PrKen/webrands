@@ -141,7 +141,6 @@ const ContactForm = () => {
             <div className="text-sm text-muted-foreground space-y-2">
               <p><strong>Webrands LLC</strong></p>
               <p>102 Gold Ave SW 162,<br />Albuquerque, NM 87102, USA</p>
-              <p>66 Avenue d’Ivry, Etage 15<br />75013 Paris, France</p>
               <p>
                 Email:{" "}
                 <a

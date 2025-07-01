@@ -38,7 +38,6 @@ const Footer = () => {
           <div className="text-sm text-gray-400 text-center md:text-right space-y-1">
             <p><strong>Webrands LLC</strong></p>
             <p>102 Gold Ave SW 162, Albuquerque, NM 87102, USA</p>
-            <p>66 Avenue d’Ivry, Etage 15 75013 Paris, France</p>
             <p>
               Email:{" "}
               <a href="mailto:team@webrandsagency.com" className="underline">
